@@ -1,2 +1,2 @@
 # FarmersPlant
-Webapplication
+A learning management system
