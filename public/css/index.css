@@ -6,6 +6,11 @@ html,body{
     color: #222;
     background-color: beige;
 }
+.container py-4{
+    height: 50px;
+    /* put value of image height as your need */
+    margin-right: 7px;
+}
 .navbar-brand {
     width:150px;
     font-size: 24px;
