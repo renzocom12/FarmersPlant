@@ -12,18 +12,22 @@ app.use('/javascripts', express.static(__dirname + 'public/javascripts'))
 
 //Set Views
 app.set('views', '/views')
-app.set('view engine','ejs')
+app.set('view engine','html')
 
 app.get('', (req, res) => {
     res.sendFile(__dirname + '/views/index.html')
 
 })
-app.get('/trainer', (req, res) => {
+app.get('/views/trainer', (req, res) => {
     res.sendFile(__dirname + '/views/trainer.html')
 
 })
-app.get('/admin', (req, res) => {
+app.get('/views/admin', (req, res) => {
     res.sendFile(__dirname + '/views/admin.html')
+
+})
+app.get('/views/modules', (req, res) => {
+    res.sendFile(__dirname + '/views/modules.html')
 
 })
 
