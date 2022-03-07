@@ -30,7 +30,10 @@ app.get('/views/modules', (req, res) => {
     res.sendFile(__dirname + '/views/modules.html')
 
 })
+app.get('/views/signin', (req, res) => {
+    res.sendFile(__dirname + '/views/signin.html')
 
+})
 //Listening on port
 app.listen( port, hostname, (error) => console.log(`Server running at http://${hostname}:${port}/`))
 
